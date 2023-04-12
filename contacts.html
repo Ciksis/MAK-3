@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakti</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <header>
+        
+        <img src="logotypes_190x168.png" alt="logo">
+    
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+          <ul>
+              <li>
+                  <a href="piekabinamie_miglotaji.html" class="">Piekabināmie miglotāji</a>
+              </li>
+              <li>
+                  <a href="mezu-kopsana.html" class="">Meža kopšana</a>
+              </li>
+              <li>
+                  <a href="contacts.html" class="active">Kontakti</a>
+              </li>
+          </ul>
+      </nav> 
+        </div>     
+     </header> 
+     <script>
+       hamburger = document.querySelector(".hamburger");
+       hamburger.onclick = function(){
+           navBar = document.querySelector(".nav-bar");
+           navBar.classList.toggle("active")
+       }
+    </script>   
+        <section class="contact">
+            <div class="content">
+                <h2>Saziņa ar mums</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil odit adipisci illo inventore eum, corrupti commodi delectus.</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Adrese</h3>
+                            <p>"Zakeri", Viesītes pag., <br>Jēkabpils nov., LV-5237</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Tālruņa numurs</h3>
+                            <p>+371 29105547</p>
+                            <p>+371 26399455</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div>
+                        <div class="text">
+                            <h3>E-pasts</h3>
+                            <p>atskaites1@inbox.lv</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
