@@ -7,12 +7,10 @@
     box-sizing: border-box;
 }
 body{
-    background: #fefefe;
+    background-image: url('baltsbackground.jpg');
+    background-size: 100% 100%;
 }
-img {
-    max-width: 80%;
-    padding-top: 20px;
-  }
+
 
 .image {
     flex-basis: 30%
@@ -22,19 +20,29 @@ img {
     width: 80%;
 }
 img{
+    max-width: 80%;
     max-width: 400px;
     float: left;
     border-radius: 10px;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
-.text-box{
-    color: black;
+.papildinfo h3 {
+    border-bottom: 2px black solid;
+    font-size: 25px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+.papildinfo p {
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
 }
 .text-box h2{
-    font-size: 35px;
-}
-.text-box p{
-    font-size: 18px;
+    text-align: center; 
+    font-size: 60;
+    color: rgb(255, 217, 0);
 }
 .text {
     font-size: 12px;
@@ -65,6 +73,24 @@ img{
     border-radius: 45px;
     margin-top: 20px;
 }
+
+.cena{
+    font-weight: bold;
+    position: right;
+    font-size: 50px;
+    margin-left:50%;
+    /*display: inline;*/
+}
+.cenacipari{
+    font-weight: bold;
+    font-style: italic;
+    color: yellow;
+    position: right;
+    margin-left:75%;
+    font-size: 70px;
+    /*display: inline;*/
+}
+
 header{
     width: 100%;
     height: 180px;
@@ -160,12 +186,7 @@ header{
         height: 100%;
     }
 }
-.back-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
+
 @media (min-aspect-ratio: 16/9){
     .back-video{
         width: 100%;
@@ -183,3 +204,114 @@ header{
     margin-right: auto;
     font-size: 19px;
   }
+
+
+
+  .grid-wrapper {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+  .grid-container {
+    display: grid;
+    position: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    border: 5px dashed yellow;
+    grid-template-columns: [first] 24% [line2] 38% [line3] 38%;
+    width: 85%;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .nosaukusms{
+      text-align: center;
+      padding:20px;
+      font-size: 38px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+  }
+  .grid-item1 {
+    text-align: center;
+    padding:20px;
+    font-size: 38px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    outline: 2px solid yellow;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: 2px solid yellow;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  /*<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #ffffff;
+  border: 5px dashed #ffd700;
+  grid-template-columns: [first] 45% [line2] 55%;
+  width: 90%;
+  gap: 2px;
+  owerflow:hidden;
+  
+}
+.nosaukusms{
+	text-align: center;
+    padding-right:4px;
+    font-size: 38px;
+    grid-colimn: 1/3;
+}
+.nosaukusms1{
+	text-align: left;
+    padding-left:4px;
+    font-size: 38px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ffd700;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-item: nth-child (even){
+	background-color:skyblue;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
+  <div class="nosaukusms"><strong>Tehniskais Raksturojums</strong></div>
+  <!--<div class="nosaukusms1"><strong>raksturojums</strong></div>-->
+  <div class="grid-item">Platums</div>  
+  <div class="grid-item">5000 mm</div>
+  <div class="grid-item">Augstums</div>
+  <div class="grid-item">18 m</div>  
+  <div class="grid-item">Tilpums</div>
+  <div class="grid-item">2000 L</div>
+  <div class="grid-item">Masa (sausa)</div>
+  <div class="grid-item">1410 kg</div>
+  <div class="grid-item">Masa (pilna)</div>  
+  <div class="grid-item">3410 kg</div>
+  <div class="grid-item">Klīrenss</div>
+  <div class="grid-item">550 mm</div>  
+</div>
+
+</body>
+</html>*/

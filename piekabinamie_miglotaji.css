@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'montserrat', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 body {
@@ -11,25 +11,47 @@ body {
     background-size: 100% 100%;
     /*background: linear-gradient(#fefefe,#aee1ec);*/
 }
-#migizvele {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px;
+.migizvele {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    grid-gap: 0px;
+    padding: 0px;
     background-color: yellow;
-    color: white;
+    align-items: center;
+    border-top: 10px;
+    position: sticky;
+    top: 0px;
+}
+.migbox {
+    width: 100%;
+    height: 4.5rem;
+    /*border: black solid 2px;*/
+    transform: scale(1);
+    text-align: center;
+    padding-top: 0.8rem;
+    
+}
+.migbox:hover {
+    cursor: pointer;
+    box-shadow: 0 7px 10px gold;
+    transform: scale(0.92);
+}
+.migboxtext{
+    color:white;
+    font-size: 33px;
+    font-weight: bold;
 
 }
-#virsraksts {
+.virsraksts {
     
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 500;
     text-align: center;
-    font-family: Impact, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #000000;
     text-transform: uppercase;
-    text-shadow: 1px 1px 0px #957dad, 1px 2px 0px #957dad, 1px 3px 0px #957dad, 1px 4px 0px #957dad, 1px 5px 0px #957dad, 1px 6px 0px #957dad, 1px 10px 5px rgba(16, 16, 16, 0.5), 1px 15px 10px rgba(16, 16, 16, 0.4), 1px 20px 30px rgba(16, 16, 16, 0.3), 1px 25px 50px rgba(16, 16, 16, 0.2);
+    /*text-shadow: 1px 1px 1px #957dad, 1px 2px 1px #957dad, 1px 3px 1px #957dad, 1px 4px 1px #957dad, 1px 5px 1px #957dad, 1px 6px 1px #957dad, 1px 7px 5px rgba(16, 16, 16, 0.5), 1px 11px 10px rgba(16, 16, 16, 0.4), 1px 15px 30px rgba(16, 16, 16, 0.3), 1px 25px 50px rgba(16, 16, 16, 0.2);*/
 }
 .image {
     /*flex-basis: 30%*/
@@ -212,4 +234,7 @@ header{
   
   .button2:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .atlantzils{
+    color:#1a0c5c;
   }

@@ -3,19 +3,31 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', Times, serif;
     box-sizing: border-box;
 }
-body{
-    background: #fefefe;
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
 }
-img {
-    max-width: 80%;
-    padding-top: 20px;
-  }
+body {
+    background-image: url('baltsbackground.jpg');
+    background-size: 100% 100%;
+}
+
+.dzeltena{
+    color: rgb(255, 217, 0);
+}
+.zila{
+    color: #1a0c5c;
+}
 
 .image {
-    flex-basis: 30%
+    flex-basis: 30%;
+  }
+  .image1 {
+    float: right;
   }
 .wrapper{
     margin: 80px auto;
