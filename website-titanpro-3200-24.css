@@ -10,11 +10,14 @@
 body {
     background-image: url('baltsbackground.jpg');
     background-size: 100% 100%;
+    width: 100%;
+    overflow: scroll;
 }
 
 .image {
     flex-basis: 30%;
     margin-top: 100px;
+    float: left;
 }
 
 .wrapper {
@@ -31,6 +34,10 @@ img {
     
 }
 
+/* .atpakalwrapper {
+    /* position: absolute; 
+} */
+
 .atpakal{
     background-color: #1a0c5c;
     border: none;
@@ -41,15 +48,19 @@ img {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    /* margin-left:  */
     border-radius: 16px;
     cursor: pointer;
-    /*position: -webkit-sticky;
+    /*position: -webkit-sticky;*/
     position: sticky;
-    left: 100px;
-    top: 20px;*/
+
+    right: 100px;
+    top: 10px;
+    z-index: 100;
 }
 .atpakaltext{
     color: white;
+    background-color: #1a0c5c;
 }
 
 .papildinfo {

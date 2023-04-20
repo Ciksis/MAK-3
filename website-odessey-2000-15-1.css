@@ -6,6 +6,33 @@
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
+
+.atpakal{
+    background-color: rgb(255, 217, 0);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    /* margin-left:  */
+    border-radius: 16px;
+    cursor: pointer;
+    /*position: -webkit-sticky;*/
+    position: sticky;
+
+    right: 100px;
+    top: 10px;
+    z-index: 100;
+}
+.atpakaltext{
+    color: white;
+    background-color: rgb(255, 217, 0);
+}
+
+
 body{
     background-image: url('baltsbackground.jpg');
     background-size: 100% 100%;

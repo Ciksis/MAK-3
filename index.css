@@ -129,7 +129,8 @@ button{
 
 .button1 {
     box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    background: url(MAX_0006.jpg);
+    background: url(BAKUSLAV_piekabinamie_smidznataji.jpg);
+    background-size: 370px 370px;
     float: inherit;
     color: darkblue; 
     background-repeat: no-repeat;
@@ -142,7 +143,8 @@ button{
 }
 .button2 {
     box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    background: url(forest.jpg);
+    background: url(mezu_kopsana.jpg);
+    background-size: 370px 370px;
     background-repeat: no-repeat;
     float: inherit;
     margin: 7px;
