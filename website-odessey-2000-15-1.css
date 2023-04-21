@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
@@ -104,11 +104,12 @@ img{
 .cena{
     font-weight: bold;
     position: right;
-    font-size: 50px;
+    font-size: 45px;
     margin-left:50%;
     /*display: inline;*/
 }
 .cenacipari{
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
     color: yellow;

@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
@@ -122,17 +122,16 @@ h2{
 
 
 
-img {
-    max-width: 80%;
-    flex-basis: 30%;
-  }
+
 
 
 .wrapper{
     margin: 80px auto;
     width: 80%;
 }
-img{
+.image{
+    max-width: 80%;
+    flex-basis: 30%;
     max-width: 400px;
     float: left;
     border-radius: 10px;
@@ -218,13 +217,15 @@ header{
 }
 
 .cena{
+    
     font-weight: bold;
     position: right;
     font-size: 50px;
-    margin-left:50%;
+    margin-left:45%;
     /*display: inline;*/
 }
 .cenacipari{
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
     color: #1a0c5c;
@@ -327,23 +328,35 @@ header{
   }
 
 .papildinfo {
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: flex-start;
     justify-items: stretch;
-}
 
+}
+/* .izkartojums{
+    align-items: inline;
+} */
+
+.papildinfo-bilde{
+    max-width: 280px;
+    border-radius: 10px;
+    margin: 20px;
+    float: left;
+}
 .papildinfo h3 {
     border-bottom: 2px black solid;
     padding-top: 20px;
     margin-left: 10px;
     font-size: 23px;
+    width: 100%;
 }
 
 .papildinfo p {
     text-align: justify;
     padding: 10px;
     font-size: 18px;
+
 }
 .ievads p{
     text-align: justify;
